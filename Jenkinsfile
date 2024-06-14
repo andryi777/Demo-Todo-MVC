@@ -28,7 +28,7 @@ pipeline {
         
 		stage("Ejecutar Pruebas") {
             steps {
-	            sh ("mvn test -Denvironment=local_chrome -Dcucumber.features=src/test/resources/features/ -Dcucumber.filter.tags=${ESCENARIO} -Dcucumber.plugin=json:target/site/result.json -Dcucumber.glue=demo")
+	            sh ("mvn test -Denvironments=local_chrome -Dcucumber.features=src/test/resources/features/ -Dcucumber.filter.tags=${ESCENARIO} -Dcucumber.plugin=json:target/site/result.json -Dcucumber.glue=demo")
 			}
         }
         
