@@ -1,9 +1,9 @@
 @tagAll
 Feature: TODO MVC Playwrigth
 
-  Background: Clear the todo list
-    Given I enter to the TodoMVC webpage
-    When I clear all items
+#  Background: Clear the todo list
+#    Given I enter to the TodoMVC webpage
+#    When I clear all items
 
   @THA-1
   Scenario: User can add a new todo item.
